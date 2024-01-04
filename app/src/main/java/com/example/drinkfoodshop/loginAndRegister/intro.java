@@ -24,4 +24,8 @@ public class intro extends AppCompatActivity {
     public void dangKy(View view) {
         startActivity(new Intent(intro.this,RegisterActivity.class));
     }
+    public void dangNhap(View view) {
+        startActivity(new Intent(intro.this,LoginActivity.class));
+    }
+
 }
