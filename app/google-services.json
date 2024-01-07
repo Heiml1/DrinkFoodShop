@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "431577033445",
+    "project_id": "drink-food-shop",
+    "storage_bucket": "drink-food-shop.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:431577033445:android:b03cebe19958b6118d820c",
+        "android_client_info": {
+          "package_name": "com.example.drinkfoodshop"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDmjNRXb-zWLuHnKHSQW161AscqM7F_sJE"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

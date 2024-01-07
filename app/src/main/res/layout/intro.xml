@@ -6,17 +6,19 @@
     android:layout_height="match_parent">
 
     <ImageView
-        android:id="@+id/imageView"
+        android:id="@+id/bgIntro"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:foreground="@drawable/foreground_design"
         android:scaleType="centerCrop"
-        app:srcCompat="@drawable/log_1"
-        tools:layout_editor_absoluteX="0dp"
-        tools:layout_editor_absoluteY="16dp" />
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/log_1" />
 
     <TextView
-        android:id="@+id/drinkFoodShop"
+        android:id="@+id/tvAppName"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:fontFamily="cursive"
@@ -47,37 +49,38 @@
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/drinkFoodShop"
+        app:layout_constraintTop_toBottomOf="@+id/tvAppName"
         app:layout_constraintVertical_bias="0.463"
         app:layout_constraintWidth_percent=".6" />
 
     <Button
         android:id="@+id/btnDangNhap"
-        android:layout_width="0dp"
-        android:layout_height="wrap_content"
+        android:layout_width="184dp"
+        android:layout_height="63dp"
         android:backgroundTint="@color/white"
+        android:onClick="dangNhap"
         android:text="Đăng nhập"
         android:textAlignment="center"
         android:textColor="@color/black"
         android:textSize="16dp"
         android:textStyle="bold"
-        android:onClick="dangNhap"
-        app:layout_constraintBottom_toBottomOf="@+id/imageView"
+        app:layout_constraintBottom_toBottomOf="@+id/bgIntro"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/btnDangKy"
-        app:layout_constraintVertical_bias="0.194"
+        app:layout_constraintVertical_bias="0.116"
         app:layout_constraintWidth_percent=".4" />
 
     <TextView
-        android:id="@+id/textView"
+        android:id="@+id/tvWelcome"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:fontFamily="cursive"
         android:text="Welcome to"
         android:textColor="@color/pramaryTitle"
         android:textSize="35dp"
-        app:layout_constraintBottom_toTopOf="@+id/drinkFoodShop"
+        app:layout_constraintBottom_toTopOf="@+id/tvAppName"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.194"
         app:layout_constraintStart_toStartOf="parent"
