@@ -11,7 +11,7 @@ import com.example.drinkfoodshop.R;
 import com.example.drinkfoodshop.loginAndRegister.intro;
 import com.google.firebase.auth.FirebaseAuth;
 
-public class MainActivity extends AppCompatActivity {
+public class homeActivity extends AppCompatActivity {
     private Button btnSignout;
     private FirebaseAuth mAuth;
     @Override
@@ -25,7 +25,7 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 FirebaseAuth.getInstance().signOut();
-                Intent intent = new Intent(MainActivity.this, intro.class);
+                Intent intent = new Intent(homeActivity.this, intro.class);
                 startActivity(intent);
                 finish();
             }
